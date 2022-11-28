@@ -26,11 +26,20 @@ li button {
   cursor: pointer;
 }
 li.low {
+  width: 200px;
   border: 2px solid #1a681e;
   color: #1a681e;
+  text-align: center;
+  justify-content: center;
+  margin: 5px;
 }
 li.high {
+  width: 200px;
   border: 2px solid #f2360c;
+  color: #f2360c;
+  text-align: center;
+  justify-content: center;
+  margin: 5px;
 }
 input[type="text"] {
   padding: 10px;
@@ -43,4 +52,21 @@ button, input[type="submit"]{
   color: #fff;
   cursor: pointer;
   border: 1px solid #000;
+  margin: 5px;
+  margin-left: 15px;
+}
+
+#High {
+  color: #f2360c;
+  border: 1px solid #f2360c;
+  padding: 5px;
+  margin-left: 10px;
+
+}
+
+#Low {
+  color: #1a681e;
+  border: 1px solid #1a681e;
+  padding: 5px;
+  margin-left: 10px;
 }

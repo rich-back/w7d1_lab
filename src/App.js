@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 function App() {
   const [tasks, setTasks] = useState([
-    { name: "Buy shopping", priority: "high" },
+    { name: "Buy shopping", priority: "low" },
     { name: "Clean bathroom", priority: "low" },
     { name: "Car's MOT", priority: "high" },
   ]);
@@ -53,10 +53,10 @@ function App() {
           value={newTask}
           onChange={handleInputChange}
         ></input>
-        <label htmlFor="High">High</label>
+        <label id="High" htmlFor="High">High</label>
         <input type="radio" name="Priority" value="high" onChange={handleRadioChange}></input>
-        <label htmlFor="Low">Low</label>
-        <input type="radio" name="Priority" value="low" onChange={handleRadioChange}></input>
+        <label id="Low" htmlFor="Low">Low</label>
+        <input  type="radio" name="Priority" value="low" onChange={handleRadioChange}></input>
         <input type="Submit" value="Save Task"></input>
       </form>
 
